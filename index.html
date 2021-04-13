@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/normalize-css.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>admin-panel</title>
+</head>
+
+<body>
+	<header>
+		<h1>Look Food</h1>
+	</header>
+	<main>
+		<section class="order_section">
+			<section class="users_section">
+				<div class="logo">
+					<h2>Loook</h2>
+				</div>
+				<ul class="user_list">
+					
+				</ul>
+			</section>
+			<section class="user_orders">
+				<div class="head">
+					<h2 class="name">Sherzod</h2>
+					<p>id: <span class="id">10100001</span></p>
+					<a class="phone" href="tel:+998991234567">+99899 123-45-67</a>
+				</div>
+				<div class="orders">
+					
+				</div>
+			</section>
+		</section>
+
+		<section class="add_orders">
+			<div class="add_user">
+				<h3>Add User</h3>
+				<input class="user_name_input" required placeholder="User_name" type="text">
+				<input class="user_phone_input" placeholder="User_phone" type="number">
+				<button id="add_member_btn">Add Member</button>
+			</div>
+			<div class="add_order">
+				<h3>Add Order</h3>
+				<div class="selects">
+					<select name="food" id="food_name">
+						<option value="1">Lavash</option>
+						<option value="2">Burger</option>
+						<option value="3">Cola</option>
+					</select>
+					<input class="food_count" value="1" placeholder="count" type="number">
+				</div>
+				<button id="add_order_btn">Add Order</button>
+			</div>
+		</section>
+	</main>
+	<script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+/* mulish-900 - latin */
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/mulish-v3-latin-900.woff2') format('woff2'),
+       url('../fonts/mulish-v3-latin-900.woff') format('woff'); 
+}
+
+/*Roboto*/
+
+@font-face{
+	font-family:  "Roboto";
+	font-weight:  300;
+	src: url('../fonts/roboto-v20-latin-300.woff'),
+			url('../fonts/roboto-v20-latin-300.woff2');
+}
+
+@font-face{
+	font-family:  "Roboto";
+	font-weight:  400;
+	src: url('../fonts/roboto-v20-latin-regular.woff'),
+			url('../fonts/roboto-v20-latin-regular.woff2');
+}
+
+@font-face{
+	font-family:  "Roboto";
+	font-weight:  500;
+	src: url('../fonts/roboto-v20-latin-500.woff'),
+			url('../fonts/roboto-v20-latin-500.woff2');
+}
+
+@font-face{
+	font-family:  "Roboto";
+	font-weight:  700;
+	src: url('../fonts/roboto-v20-latin-700.woff'),
+			url('../fonts/roboto-v20-latin-700.woff2');
+}
+
+html{
+	box-sizing: border-box;
+}
+
+*::before,
+*::after,
+*{
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+body{
+	font-family: "Roboto", sans-serif;
+}
+
+/*header*/
+
+header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Mulish", sans-serif;
+	color: white;
+	background-color: #b00000;
+	font-weight: 900;
+	height: 60px;
+	width: 100%;
+	border: solid 1px black;
+}
+
+.order_section{
+	display: flex;
+	border:solid 1px black;
+}
+
+.users_section{
+	display: inline-flex;
+	flex-direction: column;
+	width: 400px;
+	height: 610px;
+	border: solid 1px black;
+	overflow: hidden;
+}
+
+.user_list{
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+
+.user_list li{
+	display: inline-flex;
+	flex-direction: column;
+	border: solid 1px red;
+	border-radius: 5px;
+	width: 350px;
+	height: 50px;
+	margin-top: 20px;
+	padding: 3px 10px;
+}
+
+.user_list li:hover{
+	background-color: red;
+	color: beige;
+}
+
+.user_list li div{
+	display: inline-flex;
+}
+
+.user_list li div strong{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: 50px;
+}
+
+.logo{
+	display: inline-block;
+	width: 100%;
+	height: 60px;
+	border: solid 1px black;
+	padding: 10px 100px;
+	font-family: "Mulish", sans-serif;
+	font-weight: 900;
+	color: #b00000;
+}
+
+.user{
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.user_name{
+	display: inline-flex;
+}
+
+
+.user_orders{
+	display: flex;
+	flex-direction: column;
+	width: 1000px;
+}
+
+.head{
+	display: flex;
+	height: 60px;
+	width: 100%;
+	border:solid 1px black;
+	justify-content: center;
+	align-items: center;
+}
+
+.phone{
+	display: inline-flex;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 40px;
+	background-color: red;
+	color: #fff;
+	border-radius: 10px;
+	margin-left: 50px;
+	text-decoration: none;
+}
+
+.head p{
+	margin-left: 50px;
+}
+
+.orders{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 95%;
+	height: 500px;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+
+.icon{
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	border:solid 1px red;
+	border-radius: 5px;
+	align-self: start;
+	width: 200px;
+	height: 200px;
+	margin-top: 20px;
+}
+
+.count{
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 50px;
+	width: 90%;
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+.count h3{
+	display: inline-block;
+	align-self: center;
+}
+
+.count p{
+	display: inline-block;
+	width: 90%;
+	justify-content: space-between;
+	align-self: start;
+	margin-top: 5px;
+}
+
+
+/*add aorders*/
+
+.add_orders{
+	display: flex;
+	width: 100%;
+	height: 300px;
+	border:solid 1px black;
+}
+
+.add_user{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border:solid 1px black;
+	width: 400px;
+	height: 100%;
+}
+
+.add_order{
+	display: flex;
+	flex-direction: column;
+	border:solid 1px black;
+	width: 1000px;
+	height: 100%;
+	padding: 10px 100px;
+}
+
+.user_name_input, .user_phone_input{
+	display: inline-block;
+	height: 40px;
+	width: 300px;
+	margin-top: 10px;
+}
+
+.add_member{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#add_member_btn{
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.food_count{
+	display: inline-block;
+	width: 60px;
+}
+
+#add_order_btn{
+	display: inline-block;
+	width: 300px;
+	margin-top: 30px;
+}
+
+
+.active{
+	background-color: #b00000;
+	color: #fff;
+}
